@@ -26,7 +26,7 @@
   "devDependencies": {},
  "engines": {
   "node": "18.x || 20.x",
-  "npm": "^8 || ^9"
+  "npm": "10x"
 }
 ,
   "strapi": {

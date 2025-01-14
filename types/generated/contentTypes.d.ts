@@ -521,6 +521,10 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
     email: Schema.Attribute.Email;
+    image_gallery: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -529,10 +533,6 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     phone_number: Schema.Attribute.BigInteger;
-    product_images: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'company_name'>;
     updatedAt: Schema.Attribute.DateTime;

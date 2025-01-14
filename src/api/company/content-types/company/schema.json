@@ -33,7 +33,7 @@
         "audios"
       ]
     },
-    "product_images": {
+    "image_gallery": {
       "type": "media",
       "multiple": true,
       "required": false,

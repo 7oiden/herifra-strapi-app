@@ -58,6 +58,12 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "company"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "company"
     }
   }
 }

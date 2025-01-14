@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "categories"
     }
   }
 }
